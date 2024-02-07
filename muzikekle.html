@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> Müzik Ekle </h1>
+
+<form method="post">
+    <label>Muzik Adı:</label>
+    <input type="text" name="musicname"><br>
+    <label>Sanatçı Adı:</label>
+    <input type="text" name="musicartist"><br>
+    <label>Muzik Yılı:</label>
+    <input type="text" name="musicyear"><br>
+    <label>Muzik Türü:</label>
+    <input type="text" name="musictyp"><br> 
+    <label>Muzik Süresi:</label>
+    <input type="text" name="musictime"><br>
+    <input type="submit">
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> Müzik Güncelle </h1>
+
+<form method="post">
+    <input type="hidden" name="musicID" value="{{ veri[0] }}"><br>
+    <label>Muzik Adı:</label>
+    <input type="text" name="musicname" value="{{ veri[1] }}"><br>
+    <label>Sanatçı Adı:</label>
+    <input type="text" name="musicartist" value="{{ veri[2] }}"><br>
+    <label>Muzik Yılı:</label>
+    <input type="text" name="musicyear" value="{{ veri[3] }}"><br>
+    <label>Muzik Türü:</label>
+    <input type="text" name="musictyp" value="{{ veri[4] }}"><br> 
+    <label>Muzik Süresi:</label>
+    <input type="text" name="musictime" value="{{ veri[5] }}"><br>
+    <input type="submit">
+
+</form>
+
+{% endblock %}
